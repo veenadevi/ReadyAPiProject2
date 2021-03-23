@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="5ecca2c6-df15-4d23-9abe-f47e0a460ada" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5ecca2c6-df15-4d23-9abe-f47e0a460adafileName">Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="CountryFullName" id="de36738a-49da-47bb-9ac3-5735c3434184">
+    <con:settings/>
+    <con:config service="GetCountryFullName" resourcePath="/rest/v2/name/India" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="CountryFullName" id="fa6a47e1-ce4b-47c5-ab7b-62aeae5b79be" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://restcountries.eu</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://restcountries.eu/rest/v2/name/India</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="d6220a63-7f95-4368-8ac6-1fb080adffe1" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="dcb5e57a-23dd-495a-910a-ba0e9d46ad20">
+    <con:settings/>
+    <con:config service="GetCountryFullName" resourcePath="/rest/v2/currency/INR" methodName="Method 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="2560d448-9efd-4b98-b970-4ba8f1ce5a2f" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://restcountries.eu</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://restcountries.eu/rest/v2/currency/INR</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="3e4252af-d7ed-43ee-a268-a5290b4ea93f" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

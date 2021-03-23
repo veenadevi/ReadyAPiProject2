@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="ce70c328-10ca-4c47-8758-ae51d9317c05" wadlVersion="http://wadl.dev.java.net/2009/02" name="GetCountryFullName" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ce70c328-10ca-4c47-8758-ae51d9317c05fileName">GetCountryFullName</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart=""/>
+  <con:endpoints>
+    <con:endpoint>https://restcountries.eu</con:endpoint>
+  </con:endpoints>
+</con:interface>

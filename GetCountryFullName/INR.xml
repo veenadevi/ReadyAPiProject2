@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="INR" path="/rest/v2/currency/INR" id="b11903bb-ffe9-49d2-a349-65db402e971f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b11903bb-ffe9-49d2-a349-65db402e971ffileName">INR</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="e8c6073c-3144-41fe-80c2-43a13b9ad78e" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType xsi:nil="true"/>
+      <con:status>405</con:status>
+      <con:params/>
+      <con:element>data</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="ecb86868-f7ec-4f62-a31a-d72a54c46ba5" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://restcountries.eu</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://restcountries.eu/rest/v2/currency/INR</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="Method 2" id="d5caf1db-3918-4821-a66c-0826c3b7a329" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json;charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element>Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="2560d448-9efd-4b98-b970-4ba8f1ce5a2f" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://restcountries.eu</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://restcountries.eu/rest/v2/currency/INR</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="India" path="/rest/v2/name/India" id="80be5b40-20c0-4c4d-af5e-74c99a28b852" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="80be5b40-20c0-4c4d-af5e-74c99a28b852fileName">India</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>Fullname</con:name>
+      <con:value>true</con:value>
+      <con:style>QUERY</con:style>
+      <con:default>true</con:default>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Method 1" id="c96aca53-f0c5-4142-9890-65f52b3ed825" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json;charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element>Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="fa6a47e1-ce4b-47c5-ab7b-62aeae5b79be" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://restcountries.eu</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
